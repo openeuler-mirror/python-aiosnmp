@@ -10,8 +10,7 @@ BuildArch:	noarch
 
 
 %description
-```shell
-pip install aiosnmp
+aiosnmp is an asynchronous SNMP client for use with asyncio.
 
 %package -n python3-aiosnmp
 Summary:	asyncio SNMP client
@@ -19,15 +18,13 @@ Provides:	python-aiosnmp
 BuildRequires:	python3-devel
 BuildRequires:	python3-setuptools
 %description -n python3-aiosnmp
-```shell
-pip install aiosnmp
+aiosnmp is an asynchronous SNMP client for use with asyncio.
 
 %package help
 Summary:	Development documents and examples for aiosnmp
 Provides:	python3-aiosnmp-doc
 %description help
-```shell
-pip install aiosnmp
+aiosnmp is an asynchronous SNMP client for use with asyncio.
 
 %prep
 %autosetup -n aiosnmp-0.2.3
