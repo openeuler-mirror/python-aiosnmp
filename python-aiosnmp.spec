@@ -1,7 +1,7 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-aiosnmp
 Version:	0.2.3
-Release:	1
+Release:	2
 Summary:	asyncio SNMP client
 License:	MIT
 URL:		https://github.com/hh-h/aiosnmp
@@ -16,6 +16,8 @@ aiosnmp is an asynchronous SNMP client for use with asyncio.
 Summary:	asyncio SNMP client
 Provides:	python-aiosnmp
 BuildRequires:	python3-devel
+BuildRequires:  python3-pytest
+BuildRequires:  python3-pytest-runner
 BuildRequires:	python3-setuptools
 %description -n python3-aiosnmp
 aiosnmp is an asynchronous SNMP client for use with asyncio.
@@ -67,5 +69,8 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Wed May 18 2022 lvxiaoqian <xiaoqian@nj.iscas.ac.cn>
+- add necessary BuildRequires
+
 * Mon Jul 06 2020 Python_Bot <Python_Bot@openeuler.org>
 - Package Spec generated
